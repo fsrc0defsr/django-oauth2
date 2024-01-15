@@ -1,0 +1,23 @@
+#via REST client for VS Code
+
+                                                    #1) grant_type=authorization_code
+
+#authorize
+#GET http://127.0.0.1:8000/o/authorize/?response_type=code&code_challenge=7G4guHj7Kqqb9oTob7EzT33jbhUDrrGl0zk14XCl-2I&code_challenge_method=S256&client_id=id_app&redirect_uri=http://localhost:8000/noexist/callback
+
+#responce = access_token, refresh_token
+# curl -X POST \
+#     -H "Cache-Control: no-cache" \
+#     -H "Content-Type: application/x-www-form-urlencoded" \
+#     "http://127.0.0.1:8000/o/token/" \
+#     -d "client_id=id_app" \
+#     -d "client_secret=secret_app" \
+#     -d "code=5nCehXnNvJVV7wLLsSsRECEp2bif2e" \
+#     -d "code_verifier=2JHGKCVCTUFQCLBN3S4M1U17Z732XR63O8UI56XG011J3ISXAWBC3007E1Y51Z2S8NN28R0P7FRRY1W2IKKSTNYPXQ0CZELJN3JJX3COFZCC7X4T093" \
+#     -d "redirect_uri=http://localhost:8000/noexist/callback" \
+#     -d "grant_type=authorization_code"
+
+#To access the user resources we just use the access_token:
+# curl \
+#     -H "Authorization: Bearer SDBadsGUpjlZ9q301XOSg3hrGmrt61" \
+#     -X GET http://localhost:8000/users/user_info/
