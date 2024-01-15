@@ -7,9 +7,13 @@ login: admin,
 password:admin
 
 
+http://127.0.0.1:8000/o/applications/register/
+
 Applications:
 
-1) Name:app
+1) Authorization_grant_type = Authorization Code
+    
+    Name:app
     Client id: id_app
     Client secret: secret_app
     Client type: Confidentional
@@ -29,3 +33,19 @@ Applications:
         "refresh_token": "SDBadsGUpjlZ9q301XOSg3hrGmrt61"
     }
 
+2) Authorization_grant_type = Client Credentials
+
+    Name:web
+    Client id: web_id
+    Client secret: web_secret
+    Client type: Confidentional
+    Authorization grant type: client-credentials
+    
+    CREDENTIAL: d2ViX2lkOndlYl9zZWNyZXQ=
+
+    {
+        "access_token": "oZxCYnWTBAF6BNOXFXhWDCZIQZbuRf",
+        "expires_in": 36000,
+        "token_type": "Bearer",
+        "scope": "read write"
+    }
