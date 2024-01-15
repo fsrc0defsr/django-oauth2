@@ -10,8 +10,8 @@ password:admin
 Applications:
 
 1) Name:app
-    Client id: app_id
-    Client secret: app_secret
+    Client id: id_app
+    Client secret: secret_app
     Client type: Confidentional
     Authorization grant type: Authorization code
     Redirect uris:http://localhost:8000/noexist/callback
@@ -29,4 +29,3 @@ Applications:
         "refresh_token": "SDBadsGUpjlZ9q301XOSg3hrGmrt61"
     }
 
-    
