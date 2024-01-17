@@ -1,5 +1,5 @@
 # django-oauth2
-Django Oauth2 Tutorial
+Django Oauth2 Getting Started
 
 User(superuser) 
 
